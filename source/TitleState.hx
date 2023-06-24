@@ -42,7 +42,7 @@ class TitleState extends MusicBeatState
 	static var initialized:Bool = false;
 
 	var blackScreen:FlxSprite;
-	varbackgroundTitle:FlxSprite;
+	var backgroundTitle:FlxSprite;
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
@@ -205,9 +205,9 @@ class TitleState extends MusicBeatState
 		logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 		
-  backgroundTitle = new FlxSprite().loadGraphic(Paths.image('TitleBG'));
-  backgroundTitle.screenCenter();
-  backgroundTitle.antialiasing = ClientPrefs.globalAntialiasing;
+        backgroundTitle = new FlxSprite().loadGraphic(Paths.image('TitleBG'));
+        backgroundTitle.screenCenter();
+        backgroundTitle.antialiasing = ClientPrefs.globalAntialiasing;
 
 		swagShader = new ColorSwap();
 		if(!FlxG.save.data.psykaEasterEgg || !easterEggEnabled) {
